@@ -1,0 +1,58 @@
+{
+  "runs": 3,
+  "reports": [
+    "${PROJECT_ROOT}/reports\\sr_msgs_multigranularity_full_strictindcal_line_polygon_level0_seed7_e3_k5.json",
+    "${PROJECT_ROOT}/reports\\sr_msgs_multigranularity_full_strictindcal_line_polygon_level0_seed17_e3_k5.json",
+    "${PROJECT_ROOT}/reports\\sr_msgs_multigranularity_full_strictindcal_line_polygon_level0_seed27_e3_k5.json"
+  ],
+  "metrics": {
+    "auc": {
+      "mean": 0.9433486378940924,
+      "std": 0.011507184312172377
+    },
+    "eer": {
+      "mean": 0.11913580246913581,
+      "std": 0.014338014850425526
+    },
+    "separability": {
+      "mean": 1.2499917715732372,
+      "std": 0.11662555735649215
+    },
+    "recall_at_1": {
+      "mean": 0.43030303030303024,
+      "std": 0.05999693900976766
+    },
+    "recall_at_5": {
+      "mean": 0.8121212121212121,
+      "std": 0.05620374845754968
+    },
+    "mrr": {
+      "mean": 0.5930758794634393,
+      "std": 0.04750195923139506
+    },
+    "far_0.01_tar": {
+      "mean": 0.29696969696969694,
+      "std": 0.030903148567229012
+    },
+    "far_0.01_far": {
+      "mean": 0.010101010101010102,
+      "std": 0.0
+    },
+    "far_0.05_tar": {
+      "mean": 0.6242424242424242,
+      "std": 0.06180629713445798
+    },
+    "far_0.05_far": {
+      "mean": 0.05016835016835017,
+      "std": 0.0
+    },
+    "far_0.1_tar": {
+      "mean": 0.8181818181818182,
+      "std": 0.05142594772265797
+    },
+    "far_0.1_far": {
+      "mean": 0.10000000000000002,
+      "std": 1.3877787807814457e-17
+    }
+  }
+}

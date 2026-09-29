@@ -1,0 +1,137 @@
+device:
+  cuda: true
+  gpu_id: 0
+  seed: 42
+
+data:
+  line_cache_root: "reports/line_family_hier_cache_277_geomfeat"
+  polygon_cache_root: "reports/polygon_family_hier_cache_277_l3"
+  point_cache_root: "reports/point_family_hier_cache_276_balanced"
+  train_mode: "train"
+  eval_mode: "eval"
+  line_tile_selector: "manifest_default"
+  polygon_tile_selector: "manifest_default"
+  point_tile_selector: "manifest_default"
+  line_max_tiles: null
+  polygon_max_tiles: null
+  point_max_tiles: null
+  max_packages: null
+  require_complete_packages: true
+  line_subtypes_per_view: 2
+  polygon_subtypes_per_view: 2
+  point_subtypes_per_view: 2
+  line_subtypes:
+    - "roads"
+    - "railways"
+    - "waterways"
+  polygon_subtypes:
+    - "building"
+    - "landuse"
+    - "natural"
+  point_subtypes:
+    - "pois"
+    - "traffic"
+    - "transport"
+    - "pofw"
+
+line_protocol:
+  n_tiles: 8
+  k_chunks_per_tile: 16
+  depth_template:
+    2: 1
+    3: 2
+    4: 2
+    5: 3
+
+polygon_protocol:
+  n_tiles: 8
+  k_polygons_per_tile: 32
+  depth_template:
+    2: 1
+    3: 2
+    4: 2
+    5: 3
+
+point_protocol:
+  n_tiles: 8
+  k_points_per_tile: 32
+  depth_template:
+    2: 1
+    3: 2
+    4: 2
+    5: 3
+
+line_model:
+  chunk_feature_dim: 10
+  hidden_dim: 192
+  file_dim: 192
+  chunk_num_heads: 4
+  file_num_heads: 4
+  num_chunk_layers: 2
+  num_file_layers: 3
+
+polygon_model:
+  polygon_feature_dim: 10
+  hidden_dim: 192
+  file_dim: 192
+  tile_encoder_type: "set_transformer"
+  tile_num_heads: 4
+  num_tile_layers: 2
+  file_num_heads: 4
+  num_file_layers: 3
+
+point_model:
+  point_feature_dim: 14
+  visible_feature_dim: 103
+  hidden_dim: 192
+  file_dim: 192
+  visible_hidden_dim: 160
+  visible_dim: 128
+  fusion_hidden_dim: 256
+  fusion_dim: 192
+  tile_encoder_type: "set_transformer"
+  tile_num_heads: 4
+  num_tile_layers: 2
+  file_num_heads: 4
+  num_file_layers: 3
+  include_local_structure: true
+  local_grid_size: 4
+  local_radial_bins: 4
+
+fusion_model:
+  fusion_dim: 192
+  projector_dim: 128
+  branch_num_heads: 4
+  branch_num_layers: 2
+  modality_num_heads: 4
+  modality_num_layers: 2
+  dropout: 0.1
+
+loss:
+  temperature: 0.2
+  normalize: true
+
+augmentation:
+  feature_noise_std: 0.01
+
+initialization:
+  line_checkpoint: "checkpoints/roads_hier_stage1_dual_view_enhanced_hn_w010_m001/best_roads_hier_stage1_dual_view_enhanced.pth"
+  polygon_checkpoint: "checkpoints/polygon_hier_stage1_dual_view_136/best_polygon_hier_stage1_dual_view.pth"
+  point_checkpoint: "checkpoints/point_hier_stage1_dual_view_hybrid_local_276_balanced/best_point_hier_stage1_dual_view_hybrid.pth"
+  strict: true
+
+validation:
+  val_ratio: 0.25
+
+training:
+  epochs: 8
+  batch_size_files: 8
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-4
+  gradient_clip: 1.0
+  freeze_branch_epochs: 3
+  num_workers: 0
+
+logging:
+  save_dir: "checkpoints/mixed_hier_stage1_line_polygon_point_prototype"
+  log_dir: "logs/mixed_hier_stage1_line_polygon_point_prototype"

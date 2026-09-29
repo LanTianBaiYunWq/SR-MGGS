@@ -1,0 +1,156 @@
+# ============================================
+# GSD (Geometry Signature Distillation) 配置文件
+# ============================================
+
+# 数据配置
+data:
+  raw_dir: "data/raw"                    # 原始数据目录
+  processed_dir: "data/processed"        # 预处理后数据目录
+  cache_dir: "data/cache"                # 缓存目录
+  file_pattern: "*.shp"                  # 文件匹配模式
+  crs: "EPSG:4326"                       # 目标坐标系
+  max_points: 64                         # 每个几何对象最大采样点数（减少以节省显存）
+  min_points: 16                         # 最小点数阈值
+  dp_tolerance: 0.0001                   # Douglas-Peucker 简化容差
+  resample_distance: null                # 等距重采样距离（null表示自动）
+  # 全局签名配置
+  max_geometries: 1000                   # 每个shp文件最大采样几何数
+  min_geometries: 10                     # 最小几何数（少于此数的文件跳过）
+  # 通用几何编码器配置（新）
+  max_parts: 32                          # 每个几何的最大部件数
+  include_holes: true                    # 是否包含多边形内环（洞）
+
+# 数据增强配置
+augmentation:
+  enabled: true
+  num_views: 4                           # 每个样本生成的视图数
+  rotation:
+    enabled: true
+    angles: [0, 90, 180, 270]            # 旋转角度
+  noise:
+    enabled: true
+    std: 0.001                           # 噪声标准差
+  simplify:
+    enabled: true
+    tolerance_range: [0.00005, 0.0002]   # 简化容差范围
+  subsample:
+    enabled: true
+    ratio_range: [0.7, 0.95]             # 抽稀比例范围
+
+# 几何编码器配置
+geometry_encoder:
+  input_dim: 2                           # 输入维度 (x, y)
+  embed_dim: 256                         # 嵌入维度
+  num_heads: 4                           # 注意力头数
+  num_layers: 4                          # Transformer层数
+  mlp_ratio: 2.0                         # MLP扩展比例
+  dropout: 0.1                           # Dropout率
+  use_pos_encoding: true                 # 是否使用位置编码
+  pooling: "cls"                         # 池化方式: cls, mean, max
+  max_len: 256                           # 最大序列长度
+  aggregation_type: "weighted_mean"      # 聚合类型: weighted_mean, attention
+
+# 视觉教师配置
+visual_teacher:
+  backbone: "resnet50"                   # 骨干网络
+  pretrained: true                       # 使用预训练权重
+  frozen: true                           # 冻结参数
+  output_dim: 2048                       # 输出特征维度
+
+# 投影模块配置
+projector:
+  input_dim: 256                         # 输入维度（来自几何编码器）
+  hidden_dim: 512                        # 隐藏层维度
+  output_dim: 128                        # 对比学习输出维度
+  num_layers: 2                          # MLP层数
+  # 蒸馏投影器（如果使用视觉教师）
+  distill_output_dim: 2048               # 输出维度（匹配教师）
+
+# 渲染配置
+render:
+  image_size: 224                        # 渲染图像尺寸
+  line_width: 2                          # 线宽
+  fill: true                             # 是否填充多边形
+  background_color: [255, 255, 255]      # 背景色
+  fill_color: [100, 100, 100]            # 填充色
+  edge_color: [0, 0, 0]                  # 边缘色
+  padding: 0.1                           # 边界填充比例
+
+# 签名生成配置
+signature:
+  embed_dim: 256                         # 嵌入维度（匹配几何编码器）
+  signature_bits: 256                    # 签名位数
+  n_bits: 256                            # 签名位数（与 signature_bits 相同，用于 BitMarginLoss）
+  projection_type: "random"              # 投影类型: random, learned
+  quantization: "sign"                   # 量化方式: sign, median
+  use_bch: true                          # 使用BCH纠错
+  bch_poly: 137                          # BCH多项式
+  bch_bits: 5                            # BCH纠错位数
+  use_hmac: true                         # 使用HMAC密钥绑定
+  hmac_key: "gsd_secret_key_2025"        # HMAC密钥（生产环境请更换）
+
+# 损失函数配置
+loss:
+  distill_weight: 1.0                    # 蒸馏损失权重
+  contrastive_weight: 0.5                # 对比损失权重
+  temperature: 0.07                      # InfoNCE温度参数
+  normalize: true                        # 是否L2归一化
+  # 几何-视觉对齐训练（新）
+  lambda_kd: 0.5                         # 几何-视觉对齐损失权重
+  lambda_bit: 0.1                        # 符号边界损失权重
+  margin: 0.5                            # 符号边界阈值
+  beta: 0.5                              # L_amp 的权重系数
+
+# 训练配置
+training:
+  batch_size: 8                         # 批次大小（单几何模式）
+  batch_size_files: 2                    # 批次大小（全局模式：shp文件数，减少以节省显存）
+  num_workers: 0                         # 数据加载线程数（Windows下设为0避免问题）
+  epochs: 5                            # 训练轮数
+  optimizer: "adamw"                     # 优化器
+  learning_rate: 1.0e-4                  # 学习率
+  weight_decay: 0.05                     # 权重衰减
+  warmup_epochs: 5                       # 预热轮数
+  lr_scheduler: "cosine"                 # 学习率调度器
+  min_lr: 1.0e-6                         # 最小学习率
+  gradient_clip: 1.0                     # 梯度裁剪
+  mixed_precision: true                  # 混合精度训练
+  accumulation_steps: 2                  # 梯度累积步数
+
+# 全局签名训练配置
+use_visual_teacher: true                 # 是否使用视觉教师（可关闭只用对比学习）
+
+# 验证配置
+validation:
+  val_ratio: 0.1                         # 验证集比例
+  val_interval: 1                        # 验证间隔（轮）
+  save_best: true                        # 保存最佳模型
+  metric: "ber"                          # 评估指标
+
+# 日志与保存
+logging:
+  log_dir: "logs"                        # 日志目录
+  save_dir: "checkpoints"                # 模型保存目录
+  log_interval: 50                       # 日志打印间隔（步）
+  tensorboard: true                      # 使用TensorBoard
+  wandb: false                           # 使用WandB
+
+# 评估配置
+evaluation:
+  perturbations:                         # 扰动测试
+    - type: "rotation"
+      params: [15, 30, 45, 60, 90]
+    - type: "noise"
+      params: [0.0005, 0.001, 0.002, 0.005]
+    - type: "simplify"
+      params: [0.00005, 0.0001, 0.0002, 0.0005]
+    - type: "subsample"
+      params: [0.9, 0.8, 0.7, 0.6, 0.5]
+  far_threshold: 1.0e-5                  # FAR阈值
+
+# 设备配置
+device:
+  cuda: true                             # 使用CUDA
+  gpu_id: 0                              # GPU ID
+  seed: 42                               # 随机种子
+

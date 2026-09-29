@@ -1,0 +1,132 @@
+# ============================================
+# GeometryCore 文件级全局零水印训练配置
+# 适用于当前阶段的最小可用实验
+# ============================================
+
+use_visual_teacher: false
+
+data:
+  raw_dir: "data/raw"
+  dataset_backend: "geometrycore"
+  file_pattern: "*.shp"
+  max_files: null
+  verbose_dataset: true
+
+  # GeometryCore 几何前端参数
+  source_crs_if_missing: null
+  working_crs: null
+  max_points: 128
+  max_geometries: 128
+  min_geometries: 10
+  include_holes: true
+
+  # 几何家族开关
+  point_enabled: true
+  line_enabled: true
+  polygon_enabled: true
+
+  # 各几何家族 token 长度
+  point_token_budget: 32
+  line_token_budget: null
+  polygon_token_budget: null
+
+  # 合法性阈值
+  line_eps_len: 1.0e-6
+  polygon_eps_area: 1.0e-8
+  line_densify_max_segment_length: null
+
+augmentation:
+  enabled: true
+  num_views: 2
+  rotation:
+    enabled: true
+    angles: [0, 90, 180, 270]
+  noise:
+    enabled: true
+    std: 0.001
+
+geometry_encoder:
+  input_dim: 2
+  embed_dim: 256
+  num_heads: 4
+  num_layers: 4
+  mlp_ratio: 2.0
+  dropout: 0.1
+  use_pos_encoding: true
+  pooling: "cls"
+  max_len: 256
+  aggregation_type: "weighted_mean"
+
+visual_teacher:
+  backbone: "resnet50"
+  pretrained: true
+  frozen: true
+  output_dim: 2048
+
+projector:
+  input_dim: 256
+  hidden_dim: 512
+  output_dim: 128
+  num_layers: 2
+  distill_output_dim: 2048
+
+render:
+  image_size: 224
+  line_width: 2
+  fill: true
+  background_color: [255, 255, 255]
+  fill_color: [100, 100, 100]
+  edge_color: [0, 0, 0]
+  padding: 0.1
+
+signature:
+  embed_dim: 256
+  signature_bits: 256
+  n_bits: 256
+  projection_type: "random"
+  quantization: "sign"
+  use_bch: true
+  bch_poly: 137
+  bch_bits: 5
+  use_hmac: true
+  hmac_key: "gsd_secret_key_2025"
+
+loss:
+  distill_weight: 1.0
+  contrastive_weight: 0.5
+  temperature: 0.07
+  normalize: true
+  lambda_kd: 0.5
+  lambda_bit: 0.1
+  margin: 0.5
+  beta: 0.5
+
+training:
+  batch_size_files: 2
+  num_workers: 0
+  epochs: 10
+  optimizer: "adamw"
+  learning_rate: 1.0e-4
+  weight_decay: 0.05
+  warmup_epochs: 1
+  lr_scheduler: "cosine"
+  min_lr: 1.0e-6
+  gradient_clip: 1.0
+  mixed_precision: true
+  accumulation_steps: 1
+
+validation:
+  enabled: true
+  val_ratio: 0.2
+  eval_interval: 1
+
+logging:
+  save_dir: "checkpoints"
+  log_dir: "logs"
+  save_interval: 1
+  tensorboard: true
+
+device:
+  cuda: true
+  gpu_id: 0
+  seed: 42

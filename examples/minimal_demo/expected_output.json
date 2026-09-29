@@ -1,0 +1,33 @@
+{
+  "target_far": 0.05,
+  "calibrated_threshold": 1.018,
+  "point_alpha": 0.5,
+  "generic_beta": 0.25,
+  "templates_per_source": {
+    "source_alpha": 5,
+    "source_beta": 5
+  },
+  "template_scores": {
+    "source_alpha": [
+      1.749536609388233,
+      1.749506041440093,
+      1.7487933124269892,
+      1.7489376055350956,
+      1.7498654413961805
+    ],
+    "source_beta": [
+      0.24424672205788656,
+      0.20847279871233862,
+      0.2815562759397401,
+      0.23097410914932728,
+      0.25598547072103317
+    ]
+  },
+  "candidate_scores": {
+    "source_alpha": 1.7498654413961805,
+    "source_beta": 0.2815562759397401
+  },
+  "predicted_source": "source_alpha",
+  "authentication_score": 1.7498654413961805,
+  "decision": "Accept"
+}

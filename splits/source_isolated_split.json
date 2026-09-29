@@ -1,0 +1,4883 @@
+{
+  "split_unit": "raw_source_package",
+  "dataset_mode": "eval",
+  "seed": 42,
+  "line_cache_root": ".\\reports\\line_family_hier_cache_277_geomfeat",
+  "polygon_cache_root": ".\\reports\\polygon_family_hier_cache_277_l3",
+  "point_cache_root": ".\\reports\\point_family_hier_cache_276_balanced",
+  "heldout_sources_requested": [],
+  "heldout_regex": null,
+  "heldout_fraction": 0.2,
+  "n_total": 277,
+  "n_train_sources": 222,
+  "n_heldout_sources": 55,
+  "train_packages": [
+    "aachen-shp",
+    "aarhus-shp",
+    "adelaide-shp",
+    "albuquerque-shp",
+    "alexandria-shp",
+    "antwerpen-shp",
+    "arnhem-shp",
+    "augsburg-shp",
+    "austin-shp",
+    "austria",
+    "baghdad-shp",
+    "baku-shp",
+    "balaton-shp",
+    "bamberg-shp",
+    "bangkok-shp",
+    "barcelona-shp",
+    "basel-shp",
+    "beijing-latest-free.shp",
+    "beirut-shp",
+    "berkeley-shp",
+    "berlin-shp",
+    "bern-shp",
+    "bielefeld-shp",
+    "birmingham-shp",
+    "bochum-shp",
+    "bogota-shp",
+    "bombay-shp",
+    "bonn-shp",
+    "bordeaux-shp",
+    "brandenburghavel-shp",
+    "bremen-shp",
+    "bremerhaven-shp",
+    "brisbane-shp",
+    "bristol-shp",
+    "brno-shp",
+    "bruegge-shp",
+    "bruessel-shp",
+    "buenosaires-shp",
+    "cairo-shp",
+    "cambridge-shp",
+    "cambridgema-shp",
+    "capetown-shp",
+    "chicago-shp",
+    "chongqing-latest-free.shp",
+    "clermontferrand-shp",
+    "colmar-shp",
+    "copenhagen-shp",
+    "cork-shp",
+    "corsica-shp",
+    "corvallis-shp",
+    "cottbus-shp",
+    "cracow-shp",
+    "curitiba-shp",
+    "cusco-shp",
+    "dallas-shp",
+    "darmstadt-shp",
+    "davis-shp",
+    "denhaag-shp",
+    "denver-shp",
+    "dessau-shp",
+    "dortmund-shp",
+    "dresden-shp",
+    "duesseldorf-shp",
+    "duisburg-shp",
+    "edinburgh-shp",
+    "eindhoven-shp",
+    "erlangen-shp",
+    "eugene-shp",
+    "fortcollins-shp",
+    "frankfurt-shp",
+    "freiburg-shp",
+    "fujian-latest-free.shp",
+    "gansu-latest-free.shp",
+    "genf-shp",
+    "gent-shp",
+    "gera-shp",
+    "glasgow-shp",
+    "gliwice-shp",
+    "goerlitz-shp",
+    "goeteborg-shp",
+    "goettingen-shp",
+    "graz-shp",
+    "groningen-shp",
+    "guangdong-latest-free.shp",
+    "guangxi-latest-free.shp",
+    "guizhou-latest-free.shp",
+    "halifax-shp",
+    "hamburg-shp",
+    "hamm-shp",
+    "hannover-shp",
+    "hebei-latest-free.shp",
+    "heilbronn-shp",
+    "heilongjiang-latest-free.shp",
+    "helsinki-shp",
+    "hertogenbosch-shp",
+    "hong-kong-latest-free.shp",
+    "hubei-latest-free.shp",
+    "hunan-latest-free.shp",
+    "huntsville-shp",
+    "inner-mongolia-latest-free.shp",
+    "jena-shp",
+    "jerusalem-shp",
+    "jiangsu-latest-free.shp",
+    "jiangxi-latest-free.shp",
+    "jilin-latest-free.shp",
+    "johannesburg-shp",
+    "kassel-shp",
+    "katowice-shp",
+    "kiel-shp",
+    "kiew-shp",
+    "koblenz-shp",
+    "koeln-shp",
+    "konstanz-shp",
+    "lapaz-shp",
+    "laplata-shp",
+    "lausanne-shp",
+    "leeds-shp",
+    "leipzig-shp",
+    "lima-shp",
+    "linz-shp",
+    "lisbon-shp",
+    "liverpool-shp",
+    "ljubljana-shp",
+    "lodz-shp",
+    "losangeles-shp",
+    "luebeck-shp",
+    "luxemburg-shp",
+    "lyon-shp",
+    "maastricht-shp",
+    "macau-latest-free.shp",
+    "madison-shp",
+    "madrid-shp",
+    "magdeburg-shp",
+    "malmoe-shp",
+    "manchester-shp",
+    "mannheim-shp",
+    "marseille-shp",
+    "melbourne-shp",
+    "mexicocity-shp",
+    "miami-shp",
+    "minsk-shp",
+    "moenchengladbach-shp",
+    "montevideo-shp",
+    "montpellier-shp",
+    "montreal-shp",
+    "moscow-shp",
+    "muenchen-shp",
+    "muenster-shp",
+    "new-south-wales",
+    "newdelhi-shp",
+    "neworleans-shp",
+    "newyork-shp",
+    "ningxia-latest-free.shp",
+    "nuernberg-shp",
+    "oldenburg-shp",
+    "oranienburg-shp",
+    "orlando-shp",
+    "oslo-shp",
+    "osnabrueck-shp",
+    "ottawa-shp",
+    "paderborn-shp",
+    "paloalto-shp",
+    "paris-shp",
+    "perth-shp",
+    "philadelphia-shp",
+    "phnompenh-shp",
+    "portlandme-shp",
+    "portoalegre-shp",
+    "potsdam-shp",
+    "poznan-shp",
+    "qinghai-latest-free.shp",
+    "queensland",
+    "riga-shp",
+    "rostock-shp",
+    "rotterdam-shp",
+    "ruegen-shp",
+    "saarbruecken-shp",
+    "saigon-shp",
+    "sanjose-shp",
+    "sanktpetersburg-shp",
+    "santacruz-shp",
+    "santiago-shp",
+    "sarajewo-shp",
+    "seattle-shp",
+    "shaanxi-latest-free.shp",
+    "shandong-latest-free.shp",
+    "shanghai-latest-free.shp",
+    "shanxi-latest-free.shp",
+    "sheffield-shp",
+    "sichuan-latest-free.shp",
+    "singapore-shp",
+    "sofia-shp",
+    "stockton-shp",
+    "stuttgart-shp",
+    "sucre-shp",
+    "szczecin-shp",
+    "taiwan-latest-free.shp",
+    "tallinn-shp",
+    "tianjin-latest-free.shp",
+    "tibet-latest-free.shp",
+    "tilburg-shp",
+    "tokyo-shp",
+    "toronto-shp",
+    "toulouse-shp",
+    "trondheim-shp",
+    "tucson-shp",
+    "ulanbator-shp",
+    "ulm-shp",
+    "usedom-shp",
+    "vancouver-shp",
+    "victoria",
+    "victoria-shp",
+    "warenmueritz-shp",
+    "warsaw-shp",
+    "washingtondc-shp",
+    "waterloo-shp",
+    "western-australia",
+    "wien-shp",
+    "wuppertal-shp",
+    "yunnan-latest-free.shp",
+    "zhejiang-latest-free.shp",
+    "zuerich-shp"
+  ],
+  "heldout_packages": [
+    "amsterdam-shp",
+    "anhui-latest-free.shp",
+    "auckland-shp",
+    "boulder-shp",
+    "braunschweig-shp",
+    "budapest-shp",
+    "calgary-shp",
+    "canberra-shp",
+    "chemnitz-shp",
+    "craterlake-shp",
+    "damaskus-shp",
+    "dublin-shp",
+    "emden-shp",
+    "erfurt-shp",
+    "flensburg-shp",
+    "frankfurtoder-shp",
+    "gdansk-shp",
+    "hainan-latest-free.shp",
+    "halle-shp",
+    "henan-latest-free.shp",
+    "innsbruck-shp",
+    "istanbul-shp",
+    "kaiserslautern-shp",
+    "karlsruhe-shp",
+    "kaunas-shp",
+    "lakegarda-shp",
+    "liaoning-latest-free.shp",
+    "london-shp",
+    "mainz-shp",
+    "memphis-shp",
+    "ostrava-shp",
+    "palma-shp",
+    "portland-shp",
+    "porto-shp",
+    "prag-shp",
+    "providence-shp",
+    "regensburg-shp",
+    "riodejaneiro-shp",
+    "sacramento-shp",
+    "salzburg-shp",
+    "sanfrancisco-shp",
+    "santabarbara-shp",
+    "schwerin-shp",
+    "seoul-shp",
+    "south-australia",
+    "stockholm-shp",
+    "strassburg-shp",
+    "sydney-shp",
+    "tehran-shp",
+    "turin-shp",
+    "utrecht-shp",
+    "wroclaw-shp",
+    "wuerzburg-shp",
+    "xinjiang-latest-free.shp",
+    "zagreb-shp"
+  ],
+  "records": [
+    {
+      "package_id": "aachen-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "aarhus-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "adelaide-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "albuquerque-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "alexandria-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "amsterdam-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "anhui-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "antwerpen-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "arnhem-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "auckland-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "augsburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "austin-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "austria",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "baghdad-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "baku-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "balaton-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bamberg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bangkok-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "barcelona-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "basel-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "beijing-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "beirut-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "berkeley-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "berlin-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bern-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bielefeld-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "birmingham-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bochum-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bogota-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bombay-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bonn-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bordeaux-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "boulder-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "brandenburghavel-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "braunschweig-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bremen-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bremerhaven-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "brisbane-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bristol-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "brno-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bruegge-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "bruessel-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "budapest-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "buenosaires-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "cairo-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "calgary-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "cambridge-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "cambridgema-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "canberra-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "capetown-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "chemnitz-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "chicago-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "chongqing-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "clermontferrand-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "colmar-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "copenhagen-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "cork-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "corsica-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "corvallis-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "cottbus-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "cracow-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "craterlake-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "curitiba-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "cusco-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "dallas-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "damaskus-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "darmstadt-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "davis-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "denhaag-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "denver-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "dessau-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "dortmund-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "dresden-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "dublin-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "duesseldorf-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "duisburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "edinburgh-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "eindhoven-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "emden-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "erfurt-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "erlangen-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "eugene-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "flensburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "fortcollins-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "frankfurt-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "frankfurtoder-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "freiburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "fujian-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "gansu-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "gdansk-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "genf-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "gent-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "gera-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "glasgow-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "gliwice-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "goerlitz-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "goeteborg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "goettingen-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "graz-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "groningen-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "guangdong-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "guangxi-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "guizhou-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "hainan-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "halifax-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "halle-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "hamburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "hamm-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "hannover-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "hebei-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "heilbronn-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "heilongjiang-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "helsinki-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "henan-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "hertogenbosch-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "hong-kong-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "hubei-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "hunan-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "huntsville-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "inner-mongolia-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "innsbruck-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "istanbul-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "jena-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "jerusalem-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "jiangsu-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "jiangxi-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "jilin-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "johannesburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "kaiserslautern-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "karlsruhe-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "kassel-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "katowice-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "kaunas-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "kiel-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "kiew-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "koblenz-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "koeln-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "konstanz-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "lakegarda-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "lapaz-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "laplata-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "lausanne-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "leeds-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "leipzig-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "liaoning-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "lima-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "linz-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "lisbon-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "liverpool-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "ljubljana-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "lodz-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "london-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "losangeles-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "luebeck-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "luxemburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "lyon-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "maastricht-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "macau-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "madison-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "madrid-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "magdeburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "mainz-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "malmoe-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "manchester-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "mannheim-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "marseille-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "melbourne-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "memphis-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "mexicocity-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "miami-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "minsk-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "moenchengladbach-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "montevideo-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "montpellier-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "montreal-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "moscow-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "muenchen-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "muenster-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "new-south-wales",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "newdelhi-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "neworleans-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "newyork-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "ningxia-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "nuernberg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "oldenburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "oranienburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "orlando-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "oslo-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "osnabrueck-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "ostrava-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "ottawa-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "paderborn-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "palma-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "paloalto-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "paris-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "perth-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "philadelphia-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "phnompenh-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "portland-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "portlandme-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "porto-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "portoalegre-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "potsdam-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "poznan-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "prag-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "providence-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "qinghai-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "queensland",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "regensburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "riga-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "riodejaneiro-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "rostock-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "rotterdam-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "ruegen-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "saarbruecken-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "sacramento-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "saigon-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "salzburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "sanfrancisco-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "sanjose-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "sanktpetersburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "santabarbara-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "santacruz-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "santiago-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "sarajewo-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "schwerin-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "seattle-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "seoul-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "shaanxi-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "shandong-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "shanghai-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "shanxi-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "sheffield-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "sichuan-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "singapore-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "sofia-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "south-australia",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "stockholm-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "stockton-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "strassburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "stuttgart-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "sucre-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "sydney-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "szczecin-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "taiwan-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "tallinn-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "tehran-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "tianjin-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "tibet-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "tilburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "tokyo-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "toronto-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "toulouse-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "trondheim-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "tucson-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "turin-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "ulanbator-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "ulm-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "usedom-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "utrecht-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "vancouver-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "victoria",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "victoria-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "warenmueritz-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "warsaw-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "washingtondc-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "waterloo-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "western-australia",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "wien-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "wroclaw-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "wuerzburg-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "wuppertal-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "xinjiang-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "yunnan-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "zagreb-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    },
+    {
+      "package_id": "zhejiang-latest-free.shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [
+        "pois",
+        "traffic",
+        "transport",
+        "pofw"
+      ],
+      "has_point": true
+    },
+    {
+      "package_id": "zuerich-shp",
+      "line_subtypes": [
+        "roads",
+        "railways",
+        "waterways"
+      ],
+      "polygon_subtypes": [
+        "building",
+        "landuse",
+        "natural"
+      ],
+      "point_subtypes": [],
+      "has_point": false
+    }
+  ],
+  "derived_from": "${PROJECT_ROOT}/reports\\mixed_source_isolated_split_seed42_frac020.json",
+  "calibration_seed": 20260529,
+  "calibration_fraction": 0.25,
+  "n_model_train_packages": 166,
+  "n_calibration_packages": 56,
+  "n_heldout_packages": 55,
+  "model_train_packages": [
+    "aachen-shp",
+    "aarhus-shp",
+    "albuquerque-shp",
+    "alexandria-shp",
+    "arnhem-shp",
+    "augsburg-shp",
+    "austria",
+    "baghdad-shp",
+    "baku-shp",
+    "balaton-shp",
+    "bamberg-shp",
+    "bangkok-shp",
+    "barcelona-shp",
+    "beirut-shp",
+    "berkeley-shp",
+    "berlin-shp",
+    "bern-shp",
+    "bielefeld-shp",
+    "birmingham-shp",
+    "bochum-shp",
+    "bogota-shp",
+    "bombay-shp",
+    "brandenburghavel-shp",
+    "bremerhaven-shp",
+    "brisbane-shp",
+    "bristol-shp",
+    "brno-shp",
+    "bruegge-shp",
+    "buenosaires-shp",
+    "cairo-shp",
+    "cambridge-shp",
+    "cambridgema-shp",
+    "capetown-shp",
+    "chicago-shp",
+    "chongqing-latest-free.shp",
+    "clermontferrand-shp",
+    "colmar-shp",
+    "cork-shp",
+    "corsica-shp",
+    "corvallis-shp",
+    "cottbus-shp",
+    "cracow-shp",
+    "curitiba-shp",
+    "cusco-shp",
+    "dallas-shp",
+    "darmstadt-shp",
+    "davis-shp",
+    "denver-shp",
+    "dessau-shp",
+    "dortmund-shp",
+    "dresden-shp",
+    "duesseldorf-shp",
+    "eindhoven-shp",
+    "erlangen-shp",
+    "eugene-shp",
+    "frankfurt-shp",
+    "freiburg-shp",
+    "fujian-latest-free.shp",
+    "gansu-latest-free.shp",
+    "genf-shp",
+    "gent-shp",
+    "gliwice-shp",
+    "goeteborg-shp",
+    "guangxi-latest-free.shp",
+    "halifax-shp",
+    "hamburg-shp",
+    "hamm-shp",
+    "hannover-shp",
+    "heilongjiang-latest-free.shp",
+    "helsinki-shp",
+    "hertogenbosch-shp",
+    "hong-kong-latest-free.shp",
+    "hubei-latest-free.shp",
+    "hunan-latest-free.shp",
+    "huntsville-shp",
+    "jena-shp",
+    "jiangsu-latest-free.shp",
+    "jiangxi-latest-free.shp",
+    "jilin-latest-free.shp",
+    "kassel-shp",
+    "katowice-shp",
+    "kiew-shp",
+    "koeln-shp",
+    "konstanz-shp",
+    "lapaz-shp",
+    "laplata-shp",
+    "lausanne-shp",
+    "leeds-shp",
+    "leipzig-shp",
+    "lima-shp",
+    "lisbon-shp",
+    "liverpool-shp",
+    "ljubljana-shp",
+    "lodz-shp",
+    "losangeles-shp",
+    "luebeck-shp",
+    "luxemburg-shp",
+    "maastricht-shp",
+    "macau-latest-free.shp",
+    "madison-shp",
+    "madrid-shp",
+    "magdeburg-shp",
+    "manchester-shp",
+    "mannheim-shp",
+    "marseille-shp",
+    "melbourne-shp",
+    "miami-shp",
+    "minsk-shp",
+    "moenchengladbach-shp",
+    "montevideo-shp",
+    "montpellier-shp",
+    "montreal-shp",
+    "muenchen-shp",
+    "muenster-shp",
+    "new-south-wales",
+    "neworleans-shp",
+    "newyork-shp",
+    "ningxia-latest-free.shp",
+    "nuernberg-shp",
+    "oldenburg-shp",
+    "oranienburg-shp",
+    "orlando-shp",
+    "oslo-shp",
+    "osnabrueck-shp",
+    "ottawa-shp",
+    "paderborn-shp",
+    "paloalto-shp",
+    "perth-shp",
+    "philadelphia-shp",
+    "phnompenh-shp",
+    "portoalegre-shp",
+    "potsdam-shp",
+    "riga-shp",
+    "rostock-shp",
+    "ruegen-shp",
+    "saigon-shp",
+    "sanjose-shp",
+    "sanktpetersburg-shp",
+    "sarajewo-shp",
+    "seattle-shp",
+    "shaanxi-latest-free.shp",
+    "shandong-latest-free.shp",
+    "shanghai-latest-free.shp",
+    "shanxi-latest-free.shp",
+    "sheffield-shp",
+    "sichuan-latest-free.shp",
+    "singapore-shp",
+    "stockton-shp",
+    "stuttgart-shp",
+    "sucre-shp",
+    "szczecin-shp",
+    "taiwan-latest-free.shp",
+    "tallinn-shp",
+    "tianjin-latest-free.shp",
+    "tilburg-shp",
+    "toulouse-shp",
+    "trondheim-shp",
+    "tucson-shp",
+    "ulm-shp",
+    "usedom-shp",
+    "victoria",
+    "warenmueritz-shp",
+    "washingtondc-shp",
+    "waterloo-shp",
+    "yunnan-latest-free.shp",
+    "zhejiang-latest-free.shp"
+  ],
+  "calibration_packages": [
+    "adelaide-shp",
+    "antwerpen-shp",
+    "austin-shp",
+    "basel-shp",
+    "beijing-latest-free.shp",
+    "bonn-shp",
+    "bordeaux-shp",
+    "bremen-shp",
+    "bruessel-shp",
+    "copenhagen-shp",
+    "denhaag-shp",
+    "duisburg-shp",
+    "edinburgh-shp",
+    "fortcollins-shp",
+    "gera-shp",
+    "glasgow-shp",
+    "goerlitz-shp",
+    "goettingen-shp",
+    "graz-shp",
+    "groningen-shp",
+    "guangdong-latest-free.shp",
+    "guizhou-latest-free.shp",
+    "hebei-latest-free.shp",
+    "heilbronn-shp",
+    "inner-mongolia-latest-free.shp",
+    "jerusalem-shp",
+    "johannesburg-shp",
+    "kiel-shp",
+    "koblenz-shp",
+    "linz-shp",
+    "lyon-shp",
+    "malmoe-shp",
+    "mexicocity-shp",
+    "moscow-shp",
+    "newdelhi-shp",
+    "paris-shp",
+    "portlandme-shp",
+    "poznan-shp",
+    "qinghai-latest-free.shp",
+    "queensland",
+    "rotterdam-shp",
+    "saarbruecken-shp",
+    "santacruz-shp",
+    "santiago-shp",
+    "sofia-shp",
+    "tibet-latest-free.shp",
+    "tokyo-shp",
+    "toronto-shp",
+    "ulanbator-shp",
+    "vancouver-shp",
+    "victoria-shp",
+    "warsaw-shp",
+    "western-australia",
+    "wien-shp",
+    "wuppertal-shp",
+    "zuerich-shp"
+  ]
+}

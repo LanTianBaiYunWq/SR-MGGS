@@ -1,0 +1,65 @@
+device:
+  cuda: true
+  gpu_id: 0
+  seed: 42
+
+data:
+  raw_dir: "data/raw"
+  file_pattern: "*roads*.shp"
+  max_files: 34
+  source_crs_if_missing: null
+  working_crs: null
+  quadtree_depth: 2
+  tile_overlap_ratio: 0.1
+  max_points_per_chunk: 64
+  min_chunks_per_tile: 2
+  connect_radius: 50.0
+
+model:
+  chunk_hidden_dim: 256
+  edge_dim: 2
+  graph_layers: 2
+  set_num_heads: 4
+  set_num_layers: 2
+  teacher_dim: 512
+
+geometry_encoder:
+  input_dim: 2
+  embed_dim: 256
+  num_layers: 4
+  num_heads: 8
+  dropout: 0.1
+  max_points: 64
+  use_positional_encoding: true
+
+visual_teacher:
+  backbone: "resnet18"
+  output_dim: 512
+
+loss:
+  tile_distill_weight: 1.0
+  file_distill_weight: 1.0
+  contrastive_weight: 1.0
+  temperature: 0.07
+  normalize: true
+
+training:
+  epochs: 20
+  batch_size_files: 2
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  warmup_epochs: 2
+  optimizer: "adamw"
+  mixed_precision: true
+  num_workers: 0
+
+evaluation:
+  cross_validation_folds: 5
+  hard_negative_strategy: "size_matched"
+  baseline: "coarse_stats"
+
+logging:
+  log_dir: "logs/hierarchical_roads"
+  save_dir: "checkpoints/hierarchical_roads"
+  tensorboard: true
+  log_interval: 10

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+.DS_Store
+outputs/
+logs/
+artifacts/caches/
+data/raw/
+

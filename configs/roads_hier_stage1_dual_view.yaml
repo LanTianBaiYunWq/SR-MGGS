@@ -1,0 +1,52 @@
+device:
+  cuda: true
+  gpu_id: 0
+  seed: 42
+
+data:
+  cache_root: reports/line_family_hier_cache_102_geomfeat
+  train_mode: train
+  eval_mode: eval
+  tile_selector: manifest_default
+  max_tiles: null
+  max_files: null
+
+protocol:
+  n_tiles: 8
+  k_chunks_per_tile: 16
+  depth_template:
+    2: 1
+    3: 2
+    4: 2
+    5: 3
+
+augmentation:
+  feature_noise_std: 0.01
+
+model:
+  chunk_feature_dim: 10
+  hidden_dim: 128
+  file_dim: 128
+  num_heads: 4
+  num_set_layers: 2
+  dropout: 0.1
+  projector_dim: 128
+
+training:
+  epochs: 8
+  batch_size_files: 8
+  num_workers: 0
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-4
+  gradient_clip: 1.0
+
+loss:
+  temperature: 0.2
+  normalize: true
+
+validation:
+  val_ratio: 0.25
+
+logging:
+  save_dir: checkpoints/roads_hier_stage1_dual_view
+  log_dir: logs/roads_hier_stage1_dual_view

@@ -1,0 +1,24 @@
+name: sr-mggs
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=1.26.4
+  - pytorch=2.1.0
+  - torchvision=0.16.0
+  - pytorch-cuda=11.8
+  - geopandas=1.1.2
+  - shapely=2.1.2
+  - pyproj=3.7.1
+  - scikit-learn=1.7.2
+  - scipy
+  - pandas
+  - pyyaml=6.0.3
+  - tqdm
+  - matplotlib
+  - pillow
+  - tensorboard
+  - rtree
+

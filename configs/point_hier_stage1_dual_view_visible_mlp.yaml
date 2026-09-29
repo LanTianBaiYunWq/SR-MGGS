@@ -1,0 +1,50 @@
+device:
+  cuda: true
+  gpu_id: 0
+  seed: 42
+
+data:
+  cache_root: "reports/point_family_hier_cache"
+  train_mode: "train"
+  eval_mode: "eval"
+  max_files: 34
+  max_tiles: null
+  tile_selector: "manifest_default"
+
+protocol:
+  n_tiles: 8
+  k_points_per_tile: 32
+  depth_template:
+    2: 1
+    3: 2
+    4: 2
+    5: 3
+
+model:
+  input_dim: 24
+  hidden_dim: 128
+  output_dim: 128
+  projector_dim: 128
+  dropout: 0.1
+
+loss:
+  temperature: 0.07
+  normalize: true
+
+augmentation:
+  feature_noise_std: 0.0
+  visible_jitter_std: 0.01
+
+validation:
+  val_ratio: 0.25
+
+training:
+  epochs: 8
+  batch_size_files: 8
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  num_workers: 0
+
+logging:
+  log_dir: "logs/point_hier_stage1_dual_view_visible_mlp"
+  save_dir: "checkpoints/point_hier_stage1_dual_view_visible_mlp"

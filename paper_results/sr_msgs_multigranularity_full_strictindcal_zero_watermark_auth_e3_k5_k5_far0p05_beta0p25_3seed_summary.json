@@ -1,0 +1,125 @@
+{
+  "n_runs": 3,
+  "reports": [
+    "${PROJECT_ROOT}/reports\\sr_msgs_multigranularity_full_strictindcal_zero_watermark_auth_seed7_e3_k5_k5_far0p05_beta0p25.json",
+    "${PROJECT_ROOT}/reports\\sr_msgs_multigranularity_full_strictindcal_zero_watermark_auth_seed17_e3_k5_k5_far0p05_beta0p25.json",
+    "${PROJECT_ROOT}/reports\\sr_msgs_multigranularity_full_strictindcal_zero_watermark_auth_seed27_e3_k5_k5_far0p05_beta0p25.json"
+  ],
+  "arguments": {
+    "config": "${PROJECT_ROOT}/configs\\mixed_hier_stage1_line_polygon_point_generic.yaml",
+    "lp_checkpoint": "${PROJECT_ROOT}/checkpoints\\sr_msgs_line_polygon_multiscale_only_sourceisolated_strictindcal_seed7_e3_k5\\best_mixed_hier_stage1_line_polygon.pth",
+    "point_checkpoint": "${PROJECT_ROOT}/checkpoints\\point_hier_stage1_dual_view_hybrid_local_sourceisolated_strictindcal_seed7_e8\\best_point_hier_stage1_dual_view_hybrid.pth",
+    "generic_checkpoint": "${PROJECT_ROOT}/checkpoints\\mixed_hier_stage1_line_polygon_point_generic_sourceisolated_strictindcal_seed7_e8_f0\\best_mixed_hier_stage1_line_polygon_point_generic.pth",
+    "line_cache_root": "${PROJECT_ROOT}/reports\\line_family_hier_cache_277_geomfeat",
+    "polygon_cache_root": "${PROJECT_ROOT}/reports\\polygon_family_hier_cache_277_l3",
+    "point_cache_root": "${PROJECT_ROOT}/reports\\point_family_hier_cache_276_balanced",
+    "query_line_cache_root": null,
+    "query_polygon_cache_root": null,
+    "query_point_cache_root": null,
+    "dataset_mode": "eval",
+    "package_split": "${PROJECT_ROOT}/reports\\mixed_source_isolated_train_calib_split_seed42_frac020_calib25_seed20260529.json",
+    "calibration_split_name": "calibration_packages",
+    "test_split_name": "heldout_packages",
+    "scenario": "natural_missing",
+    "seed": 7,
+    "prehash_space": "encoder",
+    "scale_specs": "low:8:16,mid:16:32,high:32:64",
+    "point_alpha": 0.5,
+    "generic_beta": 0.25,
+    "enrollment_templates": 5,
+    "template_aggregation": "max",
+    "query_attack": "clean",
+    "target_far": 0.05,
+    "target_frr": 0.01,
+    "device": "cuda",
+    "output": "${PROJECT_ROOT}/reports\\sr_msgs_multigranularity_full_strictindcal_zero_watermark_auth_seed7_e3_k5_k5_far0p05_beta0p25.json",
+    "clean_cache_roots": {
+      "line": "${PROJECT_ROOT}/reports\\line_family_hier_cache_277_geomfeat",
+      "polygon": "${PROJECT_ROOT}/reports\\polygon_family_hier_cache_277_l3",
+      "point": "${PROJECT_ROOT}/reports\\point_family_hier_cache_276_balanced"
+    },
+    "scale_specs_parsed": [
+      {
+        "name": "low",
+        "line_k_chunks": 8,
+        "polygon_k_objects": 16
+      },
+      {
+        "name": "mid",
+        "line_k_chunks": 16,
+        "polygon_k_objects": 32
+      },
+      {
+        "name": "high",
+        "line_k_chunks": 32,
+        "polygon_k_objects": 64
+      }
+    ]
+  },
+  "metrics": {
+    "auc": {
+      "mean": 0.9614365881032548,
+      "std": 0.002768627707027624
+    },
+    "eer": {
+      "mean": 0.10763187429854099,
+      "std": 0.0018763471938608887
+    },
+    "separability": {
+      "mean": 1.2288444005565742,
+      "std": 0.0033891138838839266
+    },
+    "tar_at_far": {
+      "mean": 0.6787878787878787,
+      "std": 0.03090314856722901
+    },
+    "far_at_accept": {
+      "mean": 0.044444444444444446,
+      "std": 0.004049746027535067
+    },
+    "frr_at_accept": {
+      "mean": 0.3212121212121212,
+      "std": 0.03090314856722901
+    },
+    "genuine_accept": {
+      "mean": 0.6787878787878787,
+      "std": 0.03090314856722901
+    },
+    "genuine_uncertain": {
+      "mean": 0.2787878787878788,
+      "std": 0.06694158192234703
+    },
+    "genuine_reject": {
+      "mean": 0.04242424242424242,
+      "std": 0.03736008486647865
+    },
+    "impostor_accept": {
+      "mean": 0.044444444444444446,
+      "std": 0.004049746027535067
+    },
+    "impostor_uncertain": {
+      "mean": 0.11571268237934905,
+      "std": 0.02886647710906876
+    },
+    "impostor_reject": {
+      "mean": 0.8398428731762065,
+      "std": 0.0293069013897802
+    },
+    "top1_attribution": {
+      "mean": 0.5515151515151514,
+      "std": 0.037360084866478654
+    },
+    "top5_attribution": {
+      "mean": 0.8666666666666666,
+      "std": 0.022676711434993592
+    },
+    "attribution_mrr": {
+      "mean": 0.6862880974244611,
+      "std": 0.028845382793801215
+    },
+    "top1_over_threshold": {
+      "mean": 0.4969696969696969,
+      "std": 0.05620374845754971
+    }
+  }
+}

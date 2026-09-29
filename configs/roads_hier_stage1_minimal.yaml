@@ -1,0 +1,45 @@
+device:
+  cuda: true
+  gpu_id: 0
+  seed: 42
+
+data:
+  cache_root: reports/roads_hier_cache_tune3
+  train_mode: train
+  eval_mode: eval
+  tile_selector: manifest_default
+  max_tiles: null
+  max_files: null
+
+model:
+  chunk_feature_dim: 10
+  hidden_dim: 128
+  file_dim: 128
+  num_heads: 4
+  num_set_layers: 2
+  dropout: 0.1
+  projector_dim: 128
+
+augmentation:
+  tile_keep_prob: 0.85
+  chunk_keep_prob: 0.85
+  feature_noise_std: 0.01
+
+training:
+  epochs: 5
+  batch_size_files: 2
+  num_workers: 0
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-4
+  gradient_clip: 1.0
+
+loss:
+  temperature: 0.2
+  normalize: true
+
+validation:
+  val_ratio: 0.25
+
+logging:
+  save_dir: checkpoints/roads_hier_stage1_minimal
+  log_dir: logs/roads_hier_stage1_minimal
